@@ -21,10 +21,10 @@ public class Main {
         InputStreamReader	isr	=	new	InputStreamReader(is);
 	BufferedReader	br	=	new	BufferedReader(isr);
 	String	s	=	br.readLine();	//	primeira	linha
-	while	(s	!=	null)	{
+	//while	(s	!=	null)	{
             System.out.println(s);
             s=br.readLine();
-        }
+        //}
         br.close();
         
         //teste com entrada do teclado
@@ -32,10 +32,12 @@ public class Main {
         isr	=	new	InputStreamReader(is);
         br	=	new	BufferedReader(isr);
         s	=	br.readLine();
-        while	(s	!=	null)	{
+        //while	(s	!=	" ")	{
             System.out.println(s);
             s	=	br.readLine();
-        }
+            new TestaSaida(s);
+        //}
+        System.out.println(br.readLine());
         br.close();
 
     }

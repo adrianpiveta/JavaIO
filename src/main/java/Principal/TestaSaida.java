@@ -11,12 +11,19 @@ import java.io.*;
  * @author danie
  */
 public class TestaSaida	{
-    public	static	void	main(String[]	args)	throws	IOException	{
-        OutputStream	os	=	new	FileOutputStream("saida.txt");
+
+    public TestaSaida(String saida) throws FileNotFoundException, IOException {
+        OutputStream	os	=	new	FileOutputStream("teste.txt");
         OutputStreamWriter	osw	=	new	OutputStreamWriter(os);
         BufferedWriter	bw	=	new	BufferedWriter(osw);
-        bw.write("caelum");
+        bw.write(saida);
         bw.close();
     }
-				}
+    
+    /*
+    public	static	void	main(String[]	args)	throws	IOException	{
+        
+    }
+*/
+}
 
